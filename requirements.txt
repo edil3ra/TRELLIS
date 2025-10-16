@@ -1,0 +1,35 @@
+# Basic dependencies for TRELLIS
+# Note: PyTorch should be installed separately based on your CUDA version
+# See: https://pytorch.org/get-started/locally/
+
+# Basic dependencies (from setup.sh --basic)
+pillow
+imageio
+imageio-ffmpeg
+tqdm
+easydict
+opencv-python-headless
+scipy
+ninja
+rembg
+onnxruntime
+trimesh
+open3d
+xatlas
+pyvista
+pymeshfix
+igraph
+transformers
+
+# Utils3d (git dependency)
+utils3d @ git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+
+# For demo/gradio interface (optional - uncomment if needed)
+# gradio==4.44.1
+# gradio_litmodel3d==0.0.1
+
+# Training dependencies (optional - uncomment if needed for training)
+# tensorboard
+# pandas
+# lpips
+# pillow-simd  # Requires libjpeg-dev and uninstalling pillow first

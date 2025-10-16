@@ -247,7 +247,8 @@ if [ "$SPCONV" = true ] ; then
     if [ "$PLATFORM" = "cuda" ] ; then
         case $CUDA_MAJOR_VERSION in
             11) pip install spconv-cu118 ;;
-            12) pip install spconv-cu120 ;;
+            # 12) pip install spconv-cu120 ;;
+            12) pip install spconv-cu126 ;;
             *) echo "[SPCONV] Unsupported PyTorch CUDA version: $CUDA_MAJOR_VERSION" ;;
         esac
     else
